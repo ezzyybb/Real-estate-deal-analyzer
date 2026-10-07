@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Deal Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <div class="container">
+
+        <h1>Real Estate Deal Analyzer</h1>
+
+        <p class="intro">
+            Analyze a potential real estate deal and estimate its profitability.
+        </p>
+
+        <div class="calculator">
+
+            <label>Purchase Price</label>
+            <input type="number" id="purchasePrice" placeholder="Example: 150000">
+
+            <label>Estimated Repairs</label>
+            <input type="number" id="repairs" placeholder="Example: 30000">
+
+            <label>After Repair Value (ARV)</label>
+            <input type="number" id="arv" placeholder="Example: 250000">
+
+            <label>Closing Costs</label>
+            <input type="number" id="closingCosts" placeholder="Example: 10000">
+
+            <label>Holding Costs</label>
+            <input type="number" id="holdingCosts" placeholder="Example: 5000">
+
+            <label>Assignment Fee</label>
+            <input type="number" id="assignmentFee" placeholder="Example: 10000">
+
+            <button onclick="analyzeDeal()">Analyze Deal</button>
+
+        </div>
+
+        <div id="results" class="results">
+
+            <h2>Results</h2>
+
+            <p>Maximum Allowable Offer: <span id="mao">$0</span></p>
+
+            <p>Total Estimated Costs: <span id="totalCosts">$0</span></p>
+
+            <p>Estimated Profit: <span id="profit">$0</span></p>
+
+            <p>ROI: <span id="roi">0%</span></p>
+
+            <p>Deal Risk: <span id="risk">-</span></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
